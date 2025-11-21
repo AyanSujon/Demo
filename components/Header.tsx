@@ -1,8 +1,62 @@
-import React from 'react'
+import Image from 'next/image';
 
 function Header() {
   return (
-    <div>Header</div>
+    <nav className='py-[16px] px-[8px] flex flex-wrap justify-between items-center'>
+
+      {/* Logo */}
+      <div className='flex ml-20'>
+        <div>
+          <Image 
+            src="Images/Logo.svg"
+            alt="Company's blue G logo"
+            width={60}
+            height={60}
+          />
+        </div>
+
+        <div className='flex flex-col'>
+          <div className='text-[24px] text-[#070750] font-[700] pt-2'>
+            Global Dreams Connect
+          </div>
+
+          <div className='text-[14px] pl-[1px] mt-[-5px] text-[#767676]'>
+            Fresh Minds, Global Futures...
+          </div>
+        </div>
+      </div>
+
+      {/* Menu */}
+      <div className='flex flex-wrap mr-20 items-center'>
+
+        <ul className='flex gap-10 text-[#A1A1A1] text-[15px] items-center'>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Fellowship</a></li>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">Become a mentor</a></li>
+        </ul>
+
+        {/* div as button */}
+        <a href="#">
+          <div className=' ml-10 flex w-[143px] h-[58px] bg-[#070750] justify-center items-center rounded-[8px]'>
+            <div className='text-white text-[19px] justify-center '>
+              Sign up
+            </div>
+
+            
+
+            <Image
+              src="Images/arrow.svg"
+              width={24}
+              height={24}
+              alt="image of right arrow"
+            />
+          </div>
+        </a>
+
+      </div>
+    </nav>
   )
 }
 
