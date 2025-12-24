@@ -206,7 +206,7 @@ export default function FellowshipFilters() {
       </section>
 
       {/* Cards Section */}
-      <section className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-2">
+      <section className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-2 py-10">
         {fellowship.slice(0, visibleCount).map((item) => (
           <FellowshipCard key={item.id} {...item} />
         ))}
