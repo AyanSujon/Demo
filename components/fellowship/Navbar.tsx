@@ -22,7 +22,7 @@
 //         <div className="flex items-center justify-between h-16">
 //           {/* Logo Section */}
 //           <div className="flex items-center">
-        
+
 //                       <div>
 //                         <Image
 //                           src="Images/Logo.svg"
@@ -54,7 +54,7 @@
 //           {/* User Profile Button */}
 //           <div className="flex items-center">
 //             <Button variant="outline" className="rounded-xl border-gray-300">
-        
+
 //               <CircleUser className="h-5 w-5 text-[#070750] mr-2"/>
 //               <span className="text-[#070750] font-medium">Oluwabukunmi</span>
 //             </Button>
