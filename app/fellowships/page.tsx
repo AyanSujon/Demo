@@ -13,7 +13,7 @@ const Fellowships = () => {
         <div>
         
             <Navbar/> {/* Post-Login Navbar */}
-            <Navbar2/> 
+            {/* <Navbar2/>  */}
             {/* please uncomment if needed (Navbar2)*/}
         <div className='container mx-auto px-2'>
 
