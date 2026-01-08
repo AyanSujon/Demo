@@ -40,27 +40,27 @@ export default function HeroSection() {
                         </Button>
 
                         {/* Stats */}
-                        <div className="flex flex-wrap justify-center lg:justify-start gap-8 md:gap-12 pt-12">
+                        <div className="flex flex-wrap justify-center lg:justify-start gap-8 md:gap-12 pt-2">
                             <div className="flex items-center gap-3">
-                                <Users className="h-8 w-8 text-indigo-600" />
+                                <Users className="h-8 w-8 text-[#070750]" />
                                 <div>
-                                    <div className="text-3xl font-bold text-gray-900">10k+</div>
+                                    <div className="text-3xl font-bold text-[#070750]">10k+</div>
                                     <div className="text-sm text-gray-600">Students Helped</div>
                                 </div>
                             </div>
 
                             <div className="flex items-center gap-3">
-                                <UserCheck className="h-8 w-8 text-indigo-600" />
+                                <UserCheck className="h-8 w-8 text-[#FFE953]" />
                                 <div>
-                                    <div className="text-3xl font-bold text-gray-900">2k+</div>
+                                    <div className="text-3xl font-bold text-[#FFE953]">2k+</div>
                                     <div className="text-sm text-gray-600">Expert Mentors</div>
                                 </div>
                             </div>
 
                             <div className="flex items-center gap-3">
-                                <Globe className="h-8 w-8 text-indigo-600" />
+                                <Globe className="h-8 w-8 text-[#8A38F5]" />
                                 <div>
-                                    <div className="text-3xl font-bold text-gray-900">50+</div>
+                                    <div className="text-3xl font-bold text-[#8A38F5]">50+</div>
                                     <div className="text-sm text-gray-600">Countries</div>
                                 </div>
                             </div>
@@ -71,8 +71,8 @@ export default function HeroSection() {
                     <div className="relative flex justify-center lg:justify-end">
                         <div className="relative rounded-2xl overflow-hidden">
                             <Image src={'/Images/joyful-young-schoolgirl-wearing-backpack-holding-notebook-points-himself 1.png'} alt='joyful-young-schoolgirl-wearing-backpack-holding-notebook-points-himself 1'
-                                width={400}
-                                height={400}
+                                width={800}
+                                height={800}
                                 className='w-full h-full object-cover'
                             />
                         </div>
