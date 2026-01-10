@@ -47,7 +47,7 @@ const SuccessStoriesStatic = () => {
             key={index} 
             className={`border-none rounded-[1.5rem] bg-white transition-all duration-300 ${
               story.isPurple 
-                ? "shadow-[0_10px_40px_0_rgba(138,56,245,0.2)] scale-105 z-10"
+                ? "shadow-[0_10px_40px_0_rgba(138,56,245,0.2)]  z-10"
                 : "shadow-[0_15px_40px_rgba(172,204,242,0.3)] border border-slate-50"
             }`}
           >
