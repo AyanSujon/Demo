@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -10,13 +11,13 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#070750] text-white">
-      <div 
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16"
+    <footer className="bg-[#070750] text-white ">
+      <div
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+        <div className="grid grid-cols-12 gap-12 md:gap-8">
           {/* Left: Logo + Description */}
-          <div className="space-y-6">
+          <div className="space-y-6 col-span-12 md:col-span-4">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-[#070750] font-bold text-xl">
                 <Image
@@ -35,7 +36,7 @@ export default function Footer() {
           </div>
 
           {/* Center: Navigation Links */}
-          <div className="space-y-6">
+          <div className="space-y-6 col-span-12 md:col-span-2">
             <h3 className=" text-lg font-medium">Information</h3>
             <ul className="space-y-3 text-sm text-gray-300">
               <li>
@@ -66,8 +67,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Right: Socials + Email */}
-          <div className="space-y-6">
+          {/* Socials Link */}
+          <div className="space-y-6 col-span-12 md:col-span-2">
             <h3 className="text-lg font-medium">Socials</h3>
             <ul className="space-y-4">
               <li>
@@ -84,16 +85,17 @@ export default function Footer() {
               </li>
             </ul>
 
-            <div className="pt-6">
-              <h3 className="text-lg font-medium mb-4">Send us a mail</h3>
-              <Link
-                href="mailto:globaldreamconnect@gmail.com"
-                className="inline-flex items-center space-x-3 px-6 py-4 rounded-full border border-white/30 text-white hover:border-white/60 hover:bg-white/10 transition-all duration-300 group"
-              >
-                <Mail className="h-5 w-5 text-white/80 group-hover:text-white transition" />
-                <span className="text-sm md:text-base">globaldreamconnect@gmail.com</span>
-              </Link>
-            </div>
+          </div>
+
+          <div className="pt-6 col-span-12 md:col-span-4 ">
+            <h3 className="text-lg font-medium mb-4">Send us a mail</h3>
+            <Link
+              href="mailto:globaldreamconnect@gmail.com"
+              className="inline-flex items-center space-x-3 px-4 py-3 rounded-full border border-white/30 text-white hover:border-white/60 hover:bg-white/10 transition-all duration-300 group"
+            >
+              <Mail className="h-5 w-5 text-white/80 group-hover:text-white transition" />
+              <span className="text-sm md:text-base">globaldreamconnect@gmail.com</span>
+            </Link>
           </div>
         </div>
 
@@ -113,3 +115,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+
