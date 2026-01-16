@@ -1,6 +1,5 @@
 import React from 'react'
 import { Badge } from "@/components/ui/badge";
-import { Search, UserCheck, Layers, DollarSign } from "lucide-react";
 import Image from 'next/image';
 export default function ResearchPaper() {
     return (
@@ -21,7 +20,7 @@ export default function ResearchPaper() {
                 </div>
 
                 {/* Headline */}
-                <h1 className="text-5xl md:text-5xl font-bold leading-tight mb-4 text-[#0A0A0A]">
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 text-[#0A0A0A]">
                     Publish Your First <br />
                     Research Paper. <br />
                     <span className="text-gray-900">Without the $2,000 Price Tag.</span>

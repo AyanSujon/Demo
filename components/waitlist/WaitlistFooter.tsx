@@ -14,8 +14,8 @@ import Link from "next/link";
 
 export default function WaitlistFooter() {
     return (
-        <footer className="w-full bg-[#F9FAFB] border-t border-[#F9FAFB] py-8 mt-auto">
-            <div className="container mx-auto max-w-7xl px-6">
+        <footer className="w-full bg-[#F9FAFB] border-t border-[#F9FAFB] py-8 mt-auto ">
+            <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col items-center justify-center gap-3 text-center">
                     {/* Logo */}
                     <div className="w-16">
