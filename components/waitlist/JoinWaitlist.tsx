@@ -50,7 +50,7 @@ export default function JoinWaitlist() {
 
     const onSubmit = (values: z.infer<typeof formSchema>) => {
         console.log(values);
-
+        // just give the api endpoint here
 
 
 
