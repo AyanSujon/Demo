@@ -20,6 +20,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectItem, SelectTrigger, SelectValue, SelectContent } from "@/components/ui/select";
 import { useState } from "react";
 import WaitlistConfirmation from "./WaitlistConfirmation";
+import { toast } from "sonner";
 
 const formSchema = z.object({
     fullName: z.string().min(2, "Full name is required"),
@@ -48,18 +49,52 @@ export default function JoinWaitlist() {
         },
     });
 
-    const onSubmit = (values: z.infer<typeof formSchema>) => {
+    const onSubmit = async (values: z.infer<typeof formSchema>) => {
         console.log(values);
         // just give the api endpoint here
 
+        try {
+        const response = await fetch("/api/waitlist", {
+            method: "POST",
+            body: JSON.stringify(values),
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
 
+        if (!response.ok) {
+            throw new Error("Failed to submit. Please try again.");
+        }
 
-        // When success:
+        // Success Toast (Sonner)
+        toast.success("Successfully Joined!", {
+            description: "You have been added to the waitlist 🎉",
+        });
+
         setSubmittedName(values.fullName);
         setIsSubmitted(true);
 
-        // reset form
+        // reset form 
         form.reset();
+
+    } catch (error: unknown) {
+        console.error("Waitlist error:", error);
+
+        // Error Toast (Sonner)
+        toast.error("Submission Failed", {
+            description:
+                error instanceof Error
+                    ? error.message
+                    : "Something went wrong. Please try again.",
+        });
+
+        form.setError("root", {
+            message:
+                error instanceof Error
+                    ? error.message
+                    : "Something went wrong. Please try again.",
+        });
+    }
 
     };
 
